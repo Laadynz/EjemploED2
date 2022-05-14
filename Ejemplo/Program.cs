@@ -40,5 +40,11 @@
 //bool pudo = int.TryParse(numeroString, out numeroInt);
 //Console.WriteLine(pudo);
 
-string cadena = "Holamundo";
-Console.WriteLine(cadena.IndexOf("a"));
+string cadena = "Hola Mundo Lady";
+//string[] text = cadena.Split('|');
+List<string> text = cadena.Split('|').ToList();
+foreach (string s in text) 
+{
+    Console.WriteLine(s);
+}
+//Console.WriteLine(cadena.IndexOf(" "));
